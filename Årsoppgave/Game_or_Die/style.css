@@ -1,0 +1,35 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.rowswrapper {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.rowswrapper .landingrow {
+    height: 1080px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.rowswrapper .rows {
+    width: 100%;
+}
+
+.rowswrapper .rows > * {
+    height: 500px;
+    width: 100%;
+}
+
+.row2, .row4 {
+    background-color: whitesmoke;
+}
