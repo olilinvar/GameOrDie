@@ -1,35 +1,108 @@
 html {
     -webkit-text-size-adjust: 100%;
-    
 }
-
 
 body {
     margin: 0;
     padding: 0;
 }
 
-.rowswrapper {
+.pagewrapper {
     display: flex;
     flex-flow: column;
     width: 100%;
 }
 
-.rowswrapper .landingrow {
+.pagewrapper .landing {
     height: 1080px;
     width: 100%;
     background-color: whitesmoke;
 }
 
-.rowswrapper .rows {
+.rows {
     width: 100%;
 }
 
-.rowswrapper .rows > * {
+.row {
     height: 500px;
     width: 100%;
+    box-shadow: 0px 0px 1px 0px;
 }
 
-.row2, .row4 {
-    background-color: whitesmoke;
+#row2,
+#row4 {
+    background-color: rgb(247, 247, 247);
+}
+
+
+
+
+
+
+
+
+
+/*----------<CMS>----------*/
+
+.CMSpagewrapper * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.CMSpagewrapper {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+}
+
+.CMSpagewrapper h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    padding: 10px;
+}
+
+.CMSpagewrapper form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.CMSpagewrapper label,
+.CMSpagewrapper input,
+.CMSpagewrapper textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.CMSpagewrapper input[type="text"],
+.CMSpagewrapper textarea {
+    width: 100%;
+    border: none;
+    background-color: #f8f8f8;
+    resize: vertical;
+    max-height: 400px;
+    padding: 10px;
+}
+
+.CMSpagewrapper #title {
+    height: 10;
+}
+
+.CMSpagewrapper #content {
+    height: 200px;
+}
+
+.CMSpagewrapper button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
 }
