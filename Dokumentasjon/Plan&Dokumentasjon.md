@@ -14,21 +14,17 @@
   - Starte å lage alle div's og jobbe med generelt oppsett av sidene inkludert porteføljeside
 
 **Uke 13: mandag-torsdag**
- - Oppsett av sidene MÅ være ferdig innen denne uken!
- - Starte på del 2 av oppgaven (CMS)
+  - Oppsett av sidene MÅ være ferdig innen denne uken!
+  - Starte på del 2 av oppgaven (CMS)
 
 **Uke 16: tirsdag-fredag**
- - Lage 10-sekunders reklame for bedriften
- - Skrive ferdig profilerende tekst om selskapet/bedriften
+  - Lage 10-sekunders reklame for bedriften
+  - Skrive ferdig profilerende tekst om selskapet/bedriften
 
 **Uke 18:**
 
 **Uke 20: mandag-tirsdag**
- - "Siste uken"
+  - "Siste uken"
 
 **Uke 21:**
- - Buffer
-
-1. First list item
-   - First nested list item
-     - Second nested list item
+  - Buffer
