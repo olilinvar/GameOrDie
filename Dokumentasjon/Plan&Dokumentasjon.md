@@ -149,3 +149,24 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 
 
 Dele opp todo i ting å huske på og ting å lage
+
+
+CTA (call to action)
+Responisv
+Hamburgermeny for mobil
+Følger regelverk og etikk
+Kommunisere budskap til målgruppe
+Tiltak for universell utforming
+Tiltak Brukervennlig utforming
+Riktige filtyper
+Innenfor filstørrelser
+Feilsøke
+Bruke virkemidler
+Brødtekst
+Profilerende tekst om selskapet bedriften
+Skisse i XD
+SoMe reklame
+Sette opp Firebase
+Brukertesting + dokumentert tester
+Feilsøke
+Navigasjonsbar + logo på alle sider
