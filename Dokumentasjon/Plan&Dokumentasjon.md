@@ -7,31 +7,52 @@
   - Mappestruktur til oppgaven
   - Fargepalett
   - Opprette og linke HTML, CSS og JS fil
-  Ukas oppsummering:
 
 **Uke 11:**
   - Lage logo og designmanual i Illustrator/InDesign helst ferdig innen onsdag
   - Legge inn en CSS-reset
-  - Starte å lage alle <div>’er og jobbe med generelt oppsett av sidene inkludert porteføljeside
-  Ukas oppsummering:
+  - Starte å lage alle div's og jobbe med generelt oppsett av sidene inkludert porteføljeside
 
 **Uke 13: mandag-torsdag**
  - Oppsett av sidene MÅ være ferdig innen denne uken!
  - Starte på del 2 av oppgaven (CMS)
- Ukas oppsummering:
 
 **Uke 16: tirsdag-fredag**
  - Lage 10-sekunders reklame for bedriften
  - Skrive ferdig profilerende tekst om selskapet/bedriften
- Ukas oppsummering:
 
 **Uke 18:**
- Ukas oppsummering:
 
 **Uke 20: mandag-tirsdag**
  - "Siste uken"
- Ukas oppsummering:
 
 **Uke 21:**
  - Buffer
- Ukas oppsummering:
+
+
+1. List item one.
++
+List item one continued with a second paragraph followed by an
+Indented block.
++
+.................
+$ ls *.sh
+$ mv *.sh ~/tmp
+.................
++
+List item continued with a third paragraph.
+
+2. List item two continued with an open block.
++
+--
+This paragraph is part of the preceding list item.
+
+a. This list is nested and does not require explicit item
+continuation.
++
+This paragraph is part of the preceding list item.
+
+b. List item b.
+
+This paragraph belongs to item two of the outer list.
+--
