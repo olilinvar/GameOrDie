@@ -20,7 +20,6 @@
 
 **Uke 11**
   + Lage logo og designmanual i Illustrator/InDesign helst ferdig innen onsdag
-  + Legge inn en CSS-reset
   + Starte å lage alle div's og jobbe med generelt oppsett av sidene inkludert porteføljeside
 
 **Ukas oppsummering:**
@@ -56,6 +55,8 @@
 <details><summary>Uke 18:</summary>
 
 **Uke 18:**
+  + Reklame skal være ferdig
+  + Fortsett på CMS
 
 **Ukas oppsummering:**
 <p></p>
@@ -63,10 +64,12 @@
 
 ---
 
-<details><summary>Uke 20:</summary>
+<details><summary>Uke 20: / "Siste uken" </summary>
 
 **Uke 20:**
   + "Siste uken"
+  + CMS skal være ferdig
+  + Brukertesting
 
 **Ukas oppsummering:**
 <p></p>
@@ -92,7 +95,7 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 
 ---
 
-## Sidene skal inneholde:
+### Sidene skal inneholde:
 >  + Profilerende tekst om selskapet/bedriften
 >  + Hensiktsmessige bilder og/eller illustrasjoner som tydeliggjør budskapet ditt
 >  + En reklame som skal vises på SoMe for din bedrift, 5-10 sekunder
@@ -105,7 +108,7 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 
 ---
 
-## CMS skal inneholde:
+### CMS skal inneholde:
 > + Registrering av nye medlemmer
 > +	Oversikt over alle medlemmer og deres kontaktinfo
 > +	Publiseringssystem for å legge ut nytt innhold på siden
@@ -115,7 +118,7 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 
 ---
 
-## Felles vurderingskriterier
+### Felles vurderingskriterier
 > +	Du innfrir alle oppdragsgivers krav
 > +	Nettsiden er brukertestet og testene er dokumentert
 > +	Nettsiden er tilpasset målgruppen
@@ -145,7 +148,7 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 > - [ ] Laget profilerende tekst om bedriften
 > - [ ] Laget brødtekst
 > - [ ] Laget CTA (call to action)
->- [ ] Laget hamburgermeny for mobil
+> - [ ] Laget hamburgermeny for mobil
 
 ---
 
