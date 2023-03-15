@@ -130,43 +130,45 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 
 ## TODO
 
-- [ ] 
-- [ ] CTA (call to action)
-- [ ] Responisv
-- [ ] Hamburgermeny for mobil
-- [ ] Følger regelverk
-- [ ] Tiltak for universell utforming
-- [ ] Tiltak Brukervennlig utforming
-- [ ] Riktige filtyper
-- [ ] Innenfor filstørrelser
-- [ ] Feilsøke
-- [ ] Bruke virkemidler
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
+---
 
+### Har laget?
 
+> - [ ] Laget prosjektbeskrivelse
+> - [ ] Laget skisse i XD
+> - [ ] Laget designmanual
+> - [ ] Laget tydlig fargeprofil
+> - [ ] Laget porteføljeside
+> - [ ] Laget navigasjonsbar + logo på alle sider
+> - [ ] Laget SoMe reklame på 10 sekunder
+> - [ ] Laget passende grafikk og illustrasjoner
+> - [ ] Laget profilerende tekst om bedriften
+> - [ ] Laget brødtekst
+> - [ ] Laget CTA (call to action)
+>- [ ] Laget hamburgermeny for mobil
 
-Dele opp todo i ting å huske på og ting å lage
+---
 
+### Spør seg selv!
 
-CTA (call to action)
-Responisv
-Hamburgermeny for mobil
-Følger regelverk og etikk
-Kommunisere budskap til målgruppe
-Tiltak for universell utforming
-Tiltak Brukervennlig utforming
-Riktige filtyper
-Innenfor filstørrelser
-Feilsøke
-Bruke virkemidler
-Brødtekst
-Profilerende tekst om selskapet bedriften
-Skisse i XD
-SoMe reklame
-Sette opp Firebase
-Brukertesting + dokumentert tester
-Feilsøke
-Navigasjonsbar + logo på alle sider
+> - [ ] Nettsiden er responisv
+> - [ ] Nettsiden er interaktiv
+> - [ ] Nettsider er brukervennlig
+> - [ ] Nettsiden er brukertestet og testene er dokumentert
+> - [ ] Nettsiden er bygget med ryddig kode
+> - [ ] Nettsiden kommuniserer et budskap til målgruppe
+> - [ ] Nettsiden følger regelverk og etikk
+> - [ ] Nettsiden følger universell utforming
+> - [ ] Nettsiden følger oppdragsgivers krav
+> - [ ] Nettsiden har et gjennomgående design og tema
+> - [ ] Nettsiden har oversiktlig mappestruktur
+> - [ ] Nettsiden har riktige filtyper og navn
+> - [ ] Nettsiden har små filstørrelser
+> - [ ] Nettsiden laster på kort tid
+> - [ ] Nettsiden bruker virkemidler
+> - [ ] Nettsiden fanger oppmerksomheten AFAP
+
+### Ekstra for CMS:
+
+> - [ ] Grunnleggene oppsett
+> - [ ] Sette opp Firebase
