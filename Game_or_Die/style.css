@@ -16,72 +16,109 @@ body {
 }
 
 .navwrapper {
-    height: 180px;
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #333;
 }
 
 .navwrapper .nav_top {
-    height: 60px;
+    height: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .navwrapper .nav_middle {
-    height: 60px;
+    height: 100px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
     background-color: #1d1d1f;
 }
 
 .navwrapper .nav_middle img {
-    width: 240px;
+    width: 220px;
     max-width: 100%;
     height: auto;
     position: absolute;
+    border-radius: 50px;
 }
 
 .navwrapper .nav_middle .listwrapper {
-    height: 100%;
-    width: 100%;
+    height: 80px;
+    width: 90%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #1d1d1f;
+}
+
+.navwrapper .nav_middle .listwrapper .list_left {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.navwrapper .nav_middle .listwrapper ul {
+.navwrapper .nav_middle .listwrapper .list_left ul {
     height: 100%;
-    width: 100%;
+    width: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     list-style: none;
 }
 
-.navwrapper .nav_middle .listwrapper ul li {
+.navwrapper .nav_middle .listwrapper .list_right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navwrapper .nav_middle .listwrapper .list_right ul {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.navwrapper .nav_middle .listwrapper .list_right ul li,
+.navwrapper .nav_middle .listwrapper .list_left ul li {
     font-family: 'Press Start 2P';
     font-size: 28px;
     color: #ffd319;
 }
 
+.navwrapper .nav_middle .middlestripe {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
 .navwrapper .nav_bottom {
-    height: 60px;
+    height: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0e0e10;
 }
 
-.navwrapper .nav_bottom .linewrapper {
+.linewrapper {
     width: 100%;
-    height: 50%;
+    height: 100%;
 }
 
 .line1 {
@@ -108,8 +145,6 @@ body {
     background-color: #8c1eff;
     height: 20%;
 }
-
-
 
 .pagewrapper .landing {
     height: 100vh;
