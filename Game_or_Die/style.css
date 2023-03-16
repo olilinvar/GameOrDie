@@ -15,24 +15,73 @@ body {
     width: 100%;
 }
 
-.nav {
-    height: 100px;
+.navwrapper {
+    height: 180px;
     width: 100%;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    background-color: #27221f;
 }
 
-.uppernav {
+.navwrapper .nav_top {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navwrapper .nav_middle {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1d1f;
+}
+
+.navwrapper .nav_middle img {
+    width: 240px;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+.navwrapper .nav_middle .listwrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navwrapper .nav_middle .listwrapper ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.navwrapper .nav_middle .listwrapper ul li {
+    font-family: 'Press Start 2P';
+    font-size: 28px;
+    color: #ffd319;
+}
+
+.navwrapper .nav_bottom {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e0e10;
+}
+
+.navwrapper .nav_bottom .linewrapper {
+    width: 100%;
     height: 50%;
-    width: 100%;
-    background-color: #f8f8f8;
-}
-
-.linewrapper {
-    height: 20%;
-    width: 100%;
 }
 
 .line1 {
@@ -59,6 +108,8 @@ body {
     background-color: #8c1eff;
     height: 20%;
 }
+
+
 
 .pagewrapper .landing {
     height: 100vh;
