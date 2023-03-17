@@ -11,6 +11,10 @@
   + Opprette og linke HTML, CSS og JS fil
 
 **Ukas oppsummering:**
+Jeg startet uken ved å lage en generell arbeidsplan og mappestruktur til oppgaven, etter det begynte jeg å brainstorme ideer for nettsiden til Game or Die i adobe XD.
+Jeg fikk masse inspirasjon fra nettet om mulig tema og utseende. Jeg bestemte meg for å velge et retro/"synthwave" utseende.
+Denne uken oprettet jeg html, css og javascript fil. Jeg startet å dele nettsiden inn i rows for å gjøre klart for innhold.
+Jeg startet på logo i ukene før uke 11.
 <p></p>
 </details>
 
@@ -23,6 +27,8 @@
   + Starte å lage alle div's og jobbe med generelt oppsett av sidene inkludert porteføljeside
 
 **Ukas oppsummering:**
+Jeg lagde ferdig logo og tilpasset den slik at den var mer synlig på nettsiden.
+Jeg flytta hele prosjektet til github. Det tok en stund med jeg satt opp dokumentasjon i mitt repo med markdown. Fra nå av bruker jeg git til å oppdatere kode og synce med filene skyen. Denne uken har jeg også laget navbar(det var 200 linjer med css?!)
 <p></p>
 </details>
 

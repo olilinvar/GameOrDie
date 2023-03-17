@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+:root {
+    --black: #121212;
+    --black-light6: #151515;
+    --black-light12: #1B1B1B;
+    --black-light18: #202020;
+    --black-dark6: #0C0C0C;
+}
 
 html {
     -webkit-text-size-adjust: 100%;
@@ -7,6 +15,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--black);
 }
 
 .pagewrapper {
@@ -22,7 +31,7 @@ body {
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    background-color: #333;
+    background-color: var(--black-light18);
 }
 
 .navwrapper .nav_top {
@@ -40,7 +49,6 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1;
-    background-color: #1d1d1f;
 }
 
 .navwrapper .nav_middle img {
@@ -48,8 +56,29 @@ body {
     max-width: 100%;
     height: auto;
     position: absolute;
-    border-radius: 50px;
+    border: 3px solid #fff;
+    display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .navwrapper .nav_middle .listwrapper {
     height: 80px;
@@ -59,7 +88,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    background-color: #1d1d1f;
+    background-color: var(--black-light12);
+    border: 1px solid #adadad;
 }
 
 .navwrapper .nav_middle .listwrapper .list_left {
@@ -67,8 +97,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
     border-radius: 50px;
+    border: 3px solid red;
 }
 
 .navwrapper .nav_middle .listwrapper .list_right {
@@ -76,38 +106,88 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
     border-radius: 50px;
+    border: 3px solid red;
 }
 
 .navwrapper .nav_middle .listwrapper .list_left ul {
     height: 100%;
     width: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
+    border: 1px solid #fff;
 }
-/* det er ikke sentrert?, logoen og teksen er ikke perfekt midstilt */
 
+/* det er ikke sentrert?, logoen og teksen er ikke perfekt midstilt */
 .navwrapper .nav_middle .listwrapper .list_right ul {
     height: 100%;
     width: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
+    border: 1px solid #fff;
 }
 
 .navwrapper .nav_middle .listwrapper .list_right ul li,
 .navwrapper .nav_middle .listwrapper .list_left ul li {
-    font-family: 'Press Start 2P';
-    font-size: 28px;
+    font-family: 'Silkscreen';
+    font-weight: 700;
+    font-size: 2.5em;
     color: #ffd319;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbtn {
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
 .navwrapper .nav_middle .middlestripe {
-    height: 80px;
+    height: 100px;
     width: 100%;
     position: absolute;
     z-index: -1;
@@ -154,9 +234,7 @@ body {
 .pagewrapper .landing {
     height: 100vh;
     width: 100%;
-    background-color: whitesmoke;
 }
-
 
 .rows {
     width: 100%;
@@ -166,11 +244,6 @@ body {
     height: 500px;
     width: 100%;
     box-shadow: 0px 0px 1px 0px;
-}
-
-#row2,
-#row4 {
-    background-color: rgb(247, 247, 247);
 }
 
 /*----------<CMS>----------*/
