@@ -1,1 +1,1 @@
-CKEDITOR.replace('post-content');
+ClassicEditor.create(document.querySelector('#post-content'));

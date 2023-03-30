@@ -4,7 +4,7 @@
 <head>
     <title>Simple CMS</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="style" href="ckeditor_4.21.0_basic\ckeditor\contents.css">
+    <script src="./node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js"></script>
 </head>
 
 <body>
@@ -15,11 +15,9 @@
             <input type="text" id="title" name="title" required>
             <label for="content">Content:</label>
             <textarea id="post-content" name="content" required></textarea>
-
             <button type="submit" id="submit-btn">Submit</button>
         </form>
     </div>
-    <script src="ckeditor_4.21.0_basic\ckeditor\ckeditor.js"></script>
     <script src="ckeditor-init.js"></script>
 </body>
 
