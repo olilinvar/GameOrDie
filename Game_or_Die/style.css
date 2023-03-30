@@ -10,6 +10,137 @@
     --black-dark6: #0C0C0C;
 }
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 html {
     -webkit-text-size-adjust: 100%;
 }
@@ -26,7 +157,6 @@ body {
     flex-flow: column;
     width: 100%;
     font-family: "Open Sans";
-
 }
 
 .pagewrapper .landing {
@@ -57,16 +187,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 120px;
     width: 100%;
     /* background-color: var(--black-light18); */
     box-shadow: 0px 0px 1px 0px;
     font-family: "Silkscreen";
     font-weight: 700;
     font-size: 1.5rem;
-    background: rgb(255, 211, 25);
+    /* background: rgb(255, 211, 25); */
+    color: #fff;
     position: absolute;
     z-index: 1;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .navbar ul {
@@ -87,12 +220,13 @@ body {
 
 .navbar img {
     height: 120px;
+    ;
 }
 
 .landingbox {
     display: flex;
+
     flex-direction: row;
-    border: 3px solid red;
     width: 90%;
     height: 70%;
 }
@@ -100,26 +234,47 @@ body {
 .landingbox .landingbox2 {
     display: flex;
     flex-direction: column;
-    border: 3px solid red;
     padding: 30px;
+    margin: 10px;
 }
 
 .landingbox .landingbox2 button {
     height: 40px;
     width: 120px;
     margin-top: 20px;
+    margin: 20px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-family: "Silkscreen";
+    font-weight: 700;
+    font-size: 16px;
+
 }
 
 .landingbox .landingbox2 h1 {
-    font-size: 2.5rem;
+    margin: 20px;
+    padding: 0;
+    font-size: 3.4rem;
+}
+
+.landingbox .landingbox2 h2 {
+    margin: 20px;
+    font-size: 2rem;
 }
 
 .landingbox .landingbox2 p {
+    margin: 20px;
     font-size: 1.3rem;
 }
 
+.landingbox img {
+    height: 400px;
+
+}
+
 .arrow {
-    border: 3px solid blue;
+
     position: absolute;
     display: flex;
     justify-content: center;
@@ -128,7 +283,6 @@ body {
 }
 
 .arrow img {
-
     height: 100px;
     filter: invert(96%) sepia(4%) saturate(0%) hue-rotate(332deg) brightness(105%) contrast(105%);
 }
@@ -148,7 +302,7 @@ body {
 
 /*----------<CMS>----------*/
 
-.CMSpagewrapper * {
+/* .CMSpagewrapper * {
     margin: 0;
     padding: 0;
     border: 0;
@@ -209,4 +363,59 @@ body {
     border: none;
     cursor: pointer;
     margin: 10px;
+} */
+
+
+/* CSS */
+.CMSpagewrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Open Sans";
+}
+
+.CMSpagewrapper h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.CMSpagewrapper form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.CMSpagewrapper form input[type="text"],
+.CMSpagewrapper form textarea {
+    width: 98%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+.CMSpagewrapper form button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.CMSpagewrapper form button[type="submit"]:hover {
+    background-color: #555;
 }
