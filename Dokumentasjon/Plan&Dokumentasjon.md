@@ -41,6 +41,7 @@ Jeg flytta hele prosjektet til github. Det tok en stund med jeg satt opp dokumen
   + Starte på del 2 av oppgaven (CMS)
 
 **Ukas oppsummering:**
+Denne uken har det skjedd en del, jeg startet helt på nytt med siden min fordi navbar ble for komplisert og Simen anbefalte å starte på nytt men denne gangen fokusere mer på å bygge basics med minimal kode. Jeg lagde en ny navbar som var enklere og ganske lik. Jeg la også inn bakgrunnsbilde og text på landing page. Nå har jeg også en enkel CMS publiseringsside der man kan skrive inn text. Jeg la til en tekst editor med node.js og npm. Jeg er igang med eksprimentering av CSS frameworks som Booststrap. Jeg skal prøve å holde hele projektet under 1mb, derfor må alt utenom mine 3 starterfiler hentes fra 
 <p></p>
 </details>
 
@@ -181,3 +182,6 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 
 > - [ ] Grunnleggene oppsett
 > - [ ] Sette opp Firebase
+
+
+yes, i have a school assignement due in a couple of weeks. This school assignement is about creating a website for a made-up service. The purpose of this task is to prepare for future possible job scenarios where i need to design and code a website for someone. All the questions i have asked about within the last week and more is related to my assignement. Its required that i use HTML, CSS and JS. There are lots of requirements besides that, one of which seems quite difficult as i need to create a a CMS forum where the administrators in my made-up service get to post articles and such. But i am free to use the tools and methods i want to reach my goal, that includes you. Use this message as well as my previous questions as context for future questions i have about this assignement if you are able to. And do you have any reccomendations for tools that could help me complete this task, the tools i am asking for does not relate to time manegement tools ans such. If you will have trouble knowing what questions are about my assignement i could start those question with a special character or symbol.
