@@ -43,7 +43,13 @@ Jeg flytta hele prosjektet til github. Det tok en stund med jeg satt opp dokumen
 **Ukas oppsummering:**
 Denne uken har det skjedd en del, jeg startet helt på nytt med siden min fordi navbar ble for komplisert og Simen anbefalte å starte på nytt men denne gangen fokusere mer på å bygge basics med minimal kode. Jeg lagde en ny navbar som var enklere og ganske lik. Jeg la også inn bakgrunnsbilde og text på landing page. Nå har jeg også en enkel CMS publiseringsside der man kan skrive inn text. Jeg la til en tekst editor med node.js og npm. Jeg er igang med eksprimentering av CSS frameworks som Booststrap. Jeg skal prøve å holde hele projektet under 1mb, derfor må alt utenom mine 3 starterfiler hentes fra 
 <p></p>
+
+**Påskeferien:**
+Jeg finjusterte opsett av siden slik at det blir enkelere å bygge på den i fremtiden. Jeg bruker CDN for å hene inn tekst editor istedenfor at det ligger lokalt.
+<p></p>
 </details>
+
+
 
 ---
 

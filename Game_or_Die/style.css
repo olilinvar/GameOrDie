@@ -12,85 +12,85 @@
 
 html,
 body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+.pagewrapper div,
+.pagewrapper span,
+.pagewrapper applet,
+.pagewrapper object,
+.pagewrapper iframe,
+.pagewrapper h1,
+.pagewrapper h2,
+.pagewrapper h3,
+.pagewrapper h4,
+.pagewrapper h5,
+.pagewrapper h6,
+.pagewrapper p,
+.pagewrapper blockquote,
+.pagewrapper pre,
+.pagewrapper a,
+.pagewrapper abbr,
+.pagewrapper acronym,
+.pagewrapper address,
+.pagewrapper big,
+.pagewrapper cite,
+.pagewrapper code,
+.pagewrapper del,
+.pagewrapper dfn,
+.pagewrapper em,
+.pagewrapper img,
+.pagewrapper ins,
+.pagewrapper kbd,
+.pagewrapper q,
+.pagewrapper s,
+.pagewrapper samp,
+.pagewrapper small,
+.pagewrapper strike,
+.pagewrapper strong,
+.pagewrapper sub,
+.pagewrapper sup,
+.pagewrapper tt,
+.pagewrapper var,
+.pagewrapper b,
+.pagewrapper u,
+.pagewrapper i,
+.pagewrapper center,
+.pagewrapper dl,
+.pagewrapper dt,
+.pagewrapper dd,
+.pagewrapper ol,
+.pagewrapper ul,
+.pagewrapper li,
+.pagewrapper fieldset,
+.pagewrapper form,
+.pagewrapper label,
+.pagewrapper legend,
+.pagewrapper table,
+.pagewrapper caption,
+.pagewrapper tbody,
+.pagewrapper tfoot,
+.pagewrapper thead,
+.pagewrapper tr,
+.pagewrapper th,
+.pagewrapper td,
+.pagewrapper article,
+.pagewrapper aside,
+.pagewrapper canvas,
+.pagewrapper details,
+.pagewrapper embed,
+.pagewrapper figure,
+.pagewrapper figcaption,
+.pagewrapper footer,
+.pagewrapper header,
+.pagewrapper hgroup,
+.pagewrapper menu,
+.pagewrapper nav,
+.pagewrapper output,
+.pagewrapper ruby,
+.pagewrapper section,
+.pagewrapper summary,
+.pagewrapper time,
+.pagewrapper mark,
+.pagewrapper audio,
+.pagewrapper video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -100,48 +100,44 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+.pagewrapper article,
+.pagewrapper aside,
+.pagewrapper details,
+.pagewrapper figcaption,
+.pagewrapper figure,
+.pagewrapper footer,
+.pagewrapper header,
+.pagewrapper hgroup,
+.pagewrapper menu,
+.pagewrapper nav,
+.pagewrapper section {
     display: block;
 }
 
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
+.pagewrapper ol,
+.pagewrapper ul {
     list-style: none;
 }
 
-blockquote,
-q {
+.pagewrapper blockquote,
+.pagewrapper q {
     quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+.pagewrapper blockquote:before,
+.pagewrapper blockquote:after,
+.pagewrapper q:before,
+.pagewrapper q:after {
     content: '';
     content: none;
 }
 
-table {
+.pagewrapper table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-html {
+.pagewrapper html {
     -webkit-text-size-adjust: 100%;
 }
 
@@ -150,37 +146,33 @@ body {
     padding: 0;
     background-color: var(--black);
     overflow-x: hidden;
+    line-height: 1;
 }
 
 .pagewrapper {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     width: 100%;
     font-family: "Open Sans";
 }
 
-.pagewrapper .landing {
+.landing {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     height: 100vh;
     width: 100%;
     color: #fff;
-}
-
-.bg {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
     z-index: -1;
 }
 
-.bg img {
+.landing>img {
     height: 100vh;
     width: 100vw;
     opacity: 0.4;
     position: absolute;
     z-index: -1;
+    background-position: center;
+    background-size: cover;
 }
 
 .navbar {
@@ -189,17 +181,21 @@ body {
     align-items: center;
     height: 120px;
     width: 100%;
-    /* background-color: var(--black-light18); */
     box-shadow: 0px 0px 1px 0px;
-    font-family: "Silkscreen";
-    font-weight: 700;
-    font-size: 1.5rem;
-    /* background: rgb(255, 211, 25); */
     color: #fff;
-    position: absolute;
     z-index: 1;
-    background: rgb(0, 0, 0);
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.navbar button {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
 }
 
 .navbar ul {
@@ -216,16 +212,17 @@ body {
 .navbar ul li {
     list-style: none;
     display: inline-block;
+    font-family: "Silkscreen";
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .navbar img {
     height: 120px;
-    ;
 }
 
 .landingbox {
     display: flex;
-
     flex-direction: row;
     width: 90%;
     height: 70%;
@@ -274,17 +271,36 @@ body {
 }
 
 .arrow {
-
     position: absolute;
-    display: flex;
-    justify-content: center;
     bottom: 0;
+    height: 90px;
     width: 100%;
+    border: 3px solid red;
 }
 
 .arrow img {
+    display: block;
+    margin: 0 auto;
     height: 100px;
+    width: 100px;
     filter: invert(96%) sepia(4%) saturate(0%) hue-rotate(332deg) brightness(105%) contrast(105%);
+    animation: bounce 2s infinite;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .rows {
