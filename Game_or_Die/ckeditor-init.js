@@ -1,7 +1,9 @@
+var editor;
 ClassicEditor
     .create(document.querySelector('#editor'))
-    .then(editor => {
+    .then(instance => {
         console.log('Editor was initialized successfully!');
+        editor = instance;
     })
     .catch(error => {
         console.error('There was an error initializing the editor:', error);
