@@ -365,7 +365,7 @@ body {
     resize: vertical;
 }
 
-.CMSpagewrapper form button[type="submit"] {
+.CMSpagewrapper form button {
     display: block;
     margin: 0 auto;
     background-color: #333;
@@ -379,6 +379,14 @@ body {
     margin-top: 22px;
 }
 
-.CMSpagewrapper form button[type="submit"]:hover {
+.CMSpagewrapper form button:hover {
     background-color: #555;
+}
+
+.CMSpagewrapper form #contentErr,
+.CMSpagewrapper form #titleErr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
 }
