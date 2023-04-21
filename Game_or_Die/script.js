@@ -77,9 +77,7 @@ const processForm = () => {
 
 const updateUI = () => {
     localStorage.getItem("storedPosts");
-    storedPosts = 
-
-
+    storedPosts;
 }
 
 const callGetData = () => {
