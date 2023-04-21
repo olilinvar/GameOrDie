@@ -186,8 +186,5 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 
 ### Ekstra for CMS:
 
-> - [ ] Grunnleggene oppsett
+> - [x] Grunnleggene oppsett
 > - [ ] Sette opp Firebase
-
-
-yes, i have a school assignement due in a couple of weeks. This school assignement is about creating a website for a made-up service. The purpose of this task is to prepare for future possible job scenarios where i need to design and code a website for someone. All the questions i have asked about within the last week and more is related to my assignement. Its required that i use HTML, CSS and JS. There are lots of requirements besides that, one of which seems quite difficult as i need to create a a CMS forum where the administrators in my made-up service get to post articles and such. But i am free to use the tools and methods i want to reach my goal, that includes you. Use this message as well as my previous questions as context for future questions i have about this assignement if you are able to. And do you have any reccomendations for tools that could help me complete this task, the tools i am asking for does not relate to time manegement tools ans such. If you will have trouble knowing what questions are about my assignement i could start those question with a special character or symbol.

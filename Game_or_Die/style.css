@@ -17,18 +17,14 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
+    background-color: var(--black);
+    overflow-x: hidden;
+    line-height: 1;
+    color: #fff;
 
 }
 
 /* HTML5 display-role reset for older browsers */
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--black);
-    overflow-x: hidden;
-    line-height: 1;
-}
 
 .pagewrapper {
     display: flex;
@@ -334,6 +330,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
+    color: #000;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-family: "Open Sans";
