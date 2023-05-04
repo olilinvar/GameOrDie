@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameORDie Forum</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+        integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="Forumpagewrapper">
+        <div class="navbar">
+            <ul>
+                <li><button>Lorem</button></li>
+                <li><button>Lorem</button></li>
+            </ul>
+            <img src="/Game_or_Die/img/GameORDielogo_FAT_400px.png" alt="GameORDielogo">
+            <ul>
+                <li><button>Lorem</button></li>
+                <li><button>Lorem</button></li>
+            </ul>
+        </div>
+
+
+        <script id="post-template" type="text/x-handlebars-template">
+            <div class="post">
+                <h2>{{title}}</h2>
+                <p>{{content}}</p>
+            </div>
+        </script>
+
+        <div id="post-container">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

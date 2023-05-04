@@ -13,7 +13,16 @@ sort by date and popularity
 
 
 
+
+//[===============================[makePost JS]===================================
+
 const posts = [];
+
+function init() {
+    document.getElementById("submit-btn").addEventListener("click", callGetData);
+    //Wrapped in a function so that other pages wont try to find submit-btn when it does not exist
+}
+
 
 const validateTitle = (title) => {
     return title.length > 1 && /^[a-zA-Z0-9 ]+$/.test(title);
@@ -53,7 +62,7 @@ const savePost = (title, content, backupContent) => {
 
 const processForm = () => {
     const titleInput = String(document.getElementById("title").value.trim());
-    const contentInput = String(editor.getData().trim());
+    const contentInput = String(editor.getData().trim().replace(/<p[^>]*>/gi, '').replace(/<\/p>/gi, ''));
     //editor.getData() is from the ckeditor library, it gets the input data from ckeditor's textarea
     const backupContent = String(document.getElementById("editor").value.trim());
     //The backupContent variable is a fallback solution in case the ckeditor cdn servers are down
@@ -98,12 +107,6 @@ const processForm = () => {
     }
 }
 
-const updateUI = () => {
-    const storedPosts = JSON.parse(localStorage.getItem("stringifiedPosts"));
-    console.log(storedPosts)
-    //This function is called from allPosts.html retrive the stringifiedPosts array from localStorage
-}
-
 const callGetData = () => {
     try {
         const data = editor.getData();
@@ -117,4 +120,29 @@ const callGetData = () => {
     }
 };
 
-document.getElementById("submit-btn").addEventListener("click", callGetData);
+//[===============================[forum JS]===================================
+
+let newPosts = [];
+
+const getNewPosts = () => {
+    newPosts = JSON.parse(localStorage.getItem("stringifiedPosts"));
+    console.log(newPosts)
+    //This function is called from allPosts.html to retrive the stringifiedPosts array from localStorage
+}
+
+function handlebarsLoad() {
+    const postTemplate = Handlebars.compile(document.querySelector('#post-template').innerHTML);
+    const postContainer = document.querySelector('#post-container');
+    newPosts.forEach((post) => {
+        const postHTML = postTemplate(post);
+        postContainer.insertAdjacentHTML('beforeend', postHTML);
+    });
+}
+
+window.addEventListener("load", () => {
+    if (window.location.pathname.includes("forum.html")) {
+        console.log("forum initialized")
+        getNewPosts()
+        handlebarsLoad()
+    }
+})
