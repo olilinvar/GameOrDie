@@ -72,6 +72,7 @@ Jeg finjusterte opsett av siden slik at det blir enkelere å bygge på den i fre
   + Fortsett på CMS
 
 **Ukas oppsummering:**
+Denne uken gjorde jeg ferdig CMS, det kjører lokalt og har ikke mye styling men den funker helt greit. Jeg har fikset en forum side der alle posts blir lagt inn. Jeg oppdaterte nav-baren slik at den funker. Jeg har også lagt til en footer med logo og linker til sosiale medier, kontakt oss og en link til github repo.
 <p></p>
 </details>
 
@@ -121,7 +122,7 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 
 ---
 
-### CMS skal inneholde:
+### CMS bør inneholde:
 > + Registrering av nye medlemmer
 > +	Oversikt over alle medlemmer og deres kontaktinfo
 > +	Publiseringssystem for å legge ut nytt innhold på siden
@@ -150,17 +151,17 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 
 ### Har laget?
 
-> - [ ] Laget prosjektbeskrivelse
-> - [ ] Laget skisse i XD
+> - [x] Laget prosjektbeskrivelse
+> - [x] Laget skisse i XD
 > - [ ] Laget designmanual
 > - [ ] Laget tydlig fargeprofil
 > - [ ] Laget porteføljeside
-> - [ ] Laget navigasjonsbar + logo på alle sider
+> - [x] Laget navigasjonsbar + logo på alle sider
 > - [ ] Laget SoMe reklame på 10 sekunder
 > - [ ] Laget passende grafikk og illustrasjoner
 > - [ ] Laget profilerende tekst om bedriften
 > - [ ] Laget brødtekst
-> - [ ] Laget CTA (call to action)
+> - [x] Laget CTA (call to action)
 > - [ ] Laget hamburgermeny for mobil
 
 ---
@@ -177,12 +178,12 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 > - [ ] Nettsiden følger universell utforming
 > - [ ] Nettsiden følger oppdragsgivers krav
 > - [ ] Nettsiden har et gjennomgående design og tema
-> - [ ] Nettsiden har oversiktlig mappestruktur
-> - [ ] Nettsiden har riktige filtyper og navn
-> - [ ] Nettsiden har små filstørrelser
+> - [x] Nettsiden har oversiktlig mappestruktur
+> - [x] Nettsiden har riktige filtyper og navn
+> - [x] Nettsiden har små filstørrelser
 > - [ ] Nettsiden laster på kort tid
 > - [ ] Nettsiden bruker virkemidler
-> - [ ] Nettsiden fanger oppmerksomheten AFAP
+> - [ ] Nettsiden fanger oppmerksomheten
 
 ### Ekstra for CMS:
 

@@ -24,6 +24,11 @@ body {
 
 }
 
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
 /* HTML5 display-role reset for older browsers */
 
 .pagewrapper {
@@ -60,6 +65,7 @@ body {
     color: #fff;
     z-index: 1;
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    top: 0;
 }
 
 .navbar ul {
@@ -86,10 +92,17 @@ body {
     text-align: left;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.04s;
 
 }
 
 .navbar ul li button:hover {
+    color: #ff2975;
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+a:hover {
     color: #ff2975;
     transform: scale(1.1);
 }
@@ -117,26 +130,41 @@ body {
     height: 120px;
 }
 
+#inforow ul li {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+}
+
+#inforow ul li img {
+    height: 20px;
+    margin-right: 8px;
+}
+
 #inforow ul {
     padding: 0;
     text-decoration: none;
     list-style: none;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
-.footer ul li {
-    margin-top: 18px;
+#inforow p {
+    font-size: 10px;
 }
 
-#inforow > div {
+.whitefilter {
+    filter: invert(100%) brightness(100%)
+}
+
+#inforow>div {
     padding: 10px;
     border-radius: 20px;
     background-color: var(--black-light12);
 }
 
-#inforow > div > h4 {
+#inforow>div>h4 {
     margin-top: 0;
-    margin-bottom: 32px;
+    margin-bottom: 22px;
     opacity: 0.6;
 }
 
@@ -191,7 +219,10 @@ body {
 }
 
 .landingbox3 {
-    background-color: var(--black-dark6);
+    background: rgba(255,255,255,0.05);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.025);
     border-radius: 40px;
 }
 
@@ -366,13 +397,40 @@ body {
     background-color: yellow;
 }
 
-.Forumpagewrapper {
+.forumwrapper {
     width: 100%;
     height: 100%;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#rightside {
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    align-self: flex-end;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#writenew {
+    background-color: #ff2975;
+    border-radius: 100%;
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+    margin-bottom: 80px;
+}
+
+#writenew:hover {}
+
+#writenew img {
+    height: 40px;
+    width: auto;
 }
 
 #post-container {

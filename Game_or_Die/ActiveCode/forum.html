@@ -13,28 +13,33 @@
 </head>
 
 <body>
-    <div class="Forumpagewrapper">
-        <div class="navbar">
-            <ul>
-                <li><button>Lorem</button></li>
-                <li><button>Lorem</button></li>
-            </ul>
-            <img src="/Game_or_Die/img/GameORDielogo_FAT_400px.png" alt="GameORDielogo">
-            <ul>
-                <li><button>Lorem</button></li>
-                <li><button>Lorem</button></li>
-            </ul>
-        </div>
+    <div class="pagewrapper">
+        <div class="forumwrapper">
+            <div class="navbar">
+                <ul>
+                    <li><button><a href="index.html">HOME</a></button></li>
+                    <li><button><a href="">GAMES</a></button></li>
+                </ul>
+                <img src="/Game_or_Die/img/GameORDielogo_FAT_400px.png" alt="GameORDielogo">
+                <ul>
+                    <li><button><a href="">LAN</a></button></li>
+                    <li><button><a href="forum.html">FORUM</a></button></li>
+                </ul>
+            </div>
 
 
-        <script id="post-template" type="text/x-handlebars-template">
+            <script id="post-template" type="text/x-handlebars-template">
             <div class="post">
                 <h2>{{title}}</h2>
                 <p>{{content}}</p>
             </div>
         </script>
 
-        <div id="post-container">
+            <div id="post-container">
+            </div>
+            <div id="rightside"><button id="writenew"> <img class="whitefilter" src="/Game_or_Die/img/writenew.svg"
+                        alt=""></button></div>
+
         </div>
     </div>
     <script src="script.js"></script>
