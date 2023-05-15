@@ -18,6 +18,18 @@ sort by date and popularity
 
 const posts = [];
 
+const toggleButton = document.getElementsByClassName("toggle-button")[0];
+const navbarEl = document.getElementsByClassName("navbar");
+const navbarLinks = document.querySelectorAll(".navbar ul li a");
+
+toggleButton.addEventListener("click", () => {
+    navbarLinks.forEach(link => link.classList.toggle("active"));
+    for (let i = 0; i < navbarEl.length; i++) { // loop through navbarEl and toggle class on each element
+        navbarEl[i].classList.toggle("active");
+    }
+});
+
+
 function init() {
     document.getElementById("submit-btn").addEventListener("click", callGetData);
     //Wrapped in a function so that other pages wont try to find submit-btn when it does not exist

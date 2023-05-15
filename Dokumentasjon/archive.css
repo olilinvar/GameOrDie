@@ -1,16 +1,17 @@
-@import "https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-@import "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap";
 
 :root {
     --black: #121212;
     --black-light6: #151515;
     --black-light12: #1B1B1B;
     --black-light18: #202020;
-    --black-dark6: #0C0C0C
+    --black-dark6: #0C0C0C;
 }
 
 body {
+    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
     margin: 0;
@@ -20,18 +21,19 @@ body {
     overflow-x: hidden;
     line-height: 1;
     color: #fff;
+
 }
 
 ul li a {
     color: #fff;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .pagewrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
-    font-family: "Open Sans"
+    font-family: "Open Sans";
 }
 
 .landing {
@@ -40,16 +42,15 @@ ul li a {
     height: 100vh;
     width: 100%;
     color: #fff;
-    
 }
 
 .landing>img {
     height: 100%;
-    opacity: .4;
+    opacity: 0.4;
     position: absolute;
     z-index: -1;
     background-position: center;
-    background-size: cover
+    background-size: cover;
 }
 
 .navbar {
@@ -57,11 +58,11 @@ ul li a {
     justify-content: center;
     align-items: center;
     width: 100%;
-    box-shadow: 0 0 1px 0;
+    box-shadow: 0px 0px 1px 0px;
     color: #fff;
     z-index: 1;
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    top: 0
+    top: 0;
 }
 
 .navbar ul {
@@ -72,13 +73,13 @@ ul li a {
     list-style: none;
     padding: 0;
     margin: 0;
-    width: 400px
+    width: 400px;
 }
 
 .navbar ul li {
     background: none;
     border: none;
-    color: #fff;
+    color: #ffffff;
     font-family: "Silkscreen";
     font-weight: 700;
     font-size: 1.5rem;
@@ -87,18 +88,13 @@ ul li a {
     text-align: left;
     text-decoration: none;
     cursor: pointer;
-    transition: .04s
+    transition: 0.04s;
 }
 
-.navbar ul li:hover {
+.navbar ul li a:hover {
     color: #ff2975;
     transform: scale(1.1);
-    transition: .1s
-}
-
-.navbar ul li:hover a {
-    color: #ff2975;
-    transition: .15s
+    transition: 0.1s;
 }
 
 .toggle-button {
@@ -110,42 +106,57 @@ ul li a {
     justify-content: space-between;
     height: 40px;
     width: 45px;
-    z-index: 1
+    z-index: 1;
 }
 
 .toggle-button .bar {
     height: 6px;
     width: 100%;
     background-color: #fff;
-    border-radius: 10px
+    border-radius: 10px;
 }
 
 .navbar img {
-    height: 120px
+    height: 120px;
 }
 
 .hamburgerlogo {
-    display: none
+    display: none;
 }
 
 @media (max-width: 768px) {
+    .toggle-button {
+        display: flex;
+    }
+
     .navbar {
         flex-flow: row wrap;
         align-items: flex-start;
-        height: 90px
+        height: 90px;
+        /*when hamburger press
+        remove navbar height
+        display ul li a
+        */
     }
 
     .navbar ul {
         width: 100%;
         flex-direction: column;
-        justify-content: flex-start
+        justify-content: flex-start;
     }
 
     .navbar ul li {
         width: 100%;
+    }
+
+    .navbar ul li {
         width: 100%;
         display: flex;
-        justify-content: center
+        justify-content: center;
+    }
+
+    .navbar ul li:hover {
+        transform: scale(1);
     }
 
     .navbar ul li a {
@@ -155,31 +166,30 @@ ul li a {
         background-color: var(--black-light12);
         padding: 10px;
         border-bottom: solid 3px #3f3f3f;
-        display: none
+        display: none;
     }
 
     .navbar.active {
-        height: auto
+        height: auto;
+    }
+
+    .navbar ul li a.active {
+        display: flex;
     }
 
     .navbar ul li a:hover {
         transform: scale(1);
-        background-color: var(--black-light18)
+        background-color: var(--black-light18);
     }
 
     .navbar img {
-        display: none
+        display: none;
     }
 
     .navbar .hamburgerlogo {
         display: flex;
         height: 90px;
-        width: auto
-    }
-
-    .toggle-button,
-    .navbar ul li a.active {
-        display: flex
+        width: auto;
     }
 }
 
@@ -188,40 +198,40 @@ ul li a {
     align-items: center;
     height: 220px;
     width: 100%;
-    background-color: var(--black-light6)
+    background-color: var(--black-light6);
 }
 
 #inforow {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%
+    width: 100%;
 }
 
 #inforow img {
-    height: 120px
+    height: 120px;
 }
 
 #inforow ul li {
     margin-top: 14px;
     display: flex;
-    align-items: center
+    align-items: center;
 }
 
 #inforow ul li img {
     height: 20px;
-    margin-right: 8px
+    margin-right: 8px;
 }
 
 #inforow ul {
     padding: 0;
     text-decoration: none;
     list-style: none;
-    font-size: .7rem
+    font-size: 0.7rem;
 }
 
 #inforow p {
-    font-size: 10px
+    font-size: 10px;
 }
 
 .whitefilter {
@@ -230,32 +240,33 @@ ul li a {
 
 #inforow>div {
     padding: 10px;
-    border-radius: 20px
+    border-radius: 20px;
 }
 
 #inforow>div>h4 {
     margin-top: 0;
     margin-bottom: 22px;
-    opacity: .6
+    opacity: 0.6;
 }
 
 .landingbox {
     display: flex;
     flex-direction: row;
     width: 90%;
-    height: 70%
+    height: 70%;
 }
 
 .landingbox .landingbox2 {
     display: flex;
     flex-direction: column;
     margin-left: 6%;
-    margin-top: 6%
+    margin-top: 6%;
 }
 
 .landingbox .landingbox2 button {
     height: 45px;
     width: 130px;
+    margin-top: 10px;
     margin: 30px;
     outline: none;
     cursor: pointer;
@@ -263,28 +274,29 @@ ul li a {
     font-family: "Silkscreen";
     font-weight: 900;
     font-size: 16px;
-    background-color: #FDFF00
+    background-color: #FDFF00;
 }
 
 .landingbox .landingbox2 button:hover {
     transform: scale(1.1);
-    background-color: #fff
+    background-color: #fff;
 }
 
 .landingbox .landingbox2 h1 {
     font-weight: 700;
     margin: 30px;
     padding: 0;
-    font-size: 3.4rem
+    font-size: 3.4rem;
 }
 
 .landingbox .landingbox2 p {
     margin: 30px;
-    font-size: 1.3rem
+    font-size: 1.3rem;
 }
 
 .landingbox img {
-    height: 400px
+    height: 400px;
+
 }
 
 .landingbox3 {
@@ -292,14 +304,14 @@ ul li a {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.025);
-    border-radius: 40px
+    border-radius: 40px;
 }
 
 .arrow {
     position: absolute;
     bottom: 0;
     height: 90px;
-    width: 100%
+    width: 100%;
 }
 
 .arrow img {
@@ -310,22 +322,25 @@ ul li a {
     filter: invert(96%) sepia(4%) saturate(0%) hue-rotate(332deg) brightness(105%) contrast(105%);
     animation: bounce 2s infinite;
     position: relative;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
 }
 
 @keyframes bounce {
-    50% {
-        transform: translateY(10px)
+    0% {
+        transform: translateY(0);
     }
 
-    0%,
+    50% {
+        transform: translateY(10px);
+    }
+
     100% {
-        transform: translateY(0)
+        transform: translateY(0);
     }
 }
 
 .rows {
-    width: 100%
+    width: 100%;
 }
 
 .row {
@@ -333,8 +348,8 @@ ul li a {
     min-height: 500px;
     max-height: 500px;
     width: 100%;
-    box-shadow: 0 0 1px 0;
-    background-color: #1B1B1B
+    box-shadow: 0px 0px 1px 0px;
+    background-color: #1B1B1B;
 }
 
 .testimonial-container-wrapper {
@@ -342,7 +357,7 @@ ul li a {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end
+    align-items: flex-end;
 }
 
 .testimonial-container {
@@ -352,29 +367,31 @@ ul li a {
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
-    background-color: #333
+    background-color: #333;
 }
 
 .testimonial-content {
     width: 320px;
     height: 240px;
-    color: #fff;
+    color: white;
     border: 3px solid #ff2975;
     background: #222;
-    padding: 10px
+    padding: 10px;
 }
 
 .testimonial-stars {
     margin: 4px;
     margin-left: 10px;
-    margin-top: 4px
+    margin-top: 4px;
 }
+
+
 
 .testimonial-text {
     margin: 20px;
     font-size: 18px;
     font-style: italic;
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 .testimonial-img {
@@ -384,16 +401,19 @@ ul li a {
     filter: invert(100%) saturate(100%) brightness(100%);
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 .testimonial-author {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: bold;
     text-align: right;
     float: right;
-    margin-top: 20px
+    margin-top: 20px;
 }
+
+
+/*----------<CMS>----------*/
 
 .CMSpagewrapper {
     max-width: 800px;
@@ -403,20 +423,20 @@ ul li a {
     color: #000;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-family: "Open Sans"
+    font-family: "Open Sans";
 }
 
 .CMSpagewrapper h1 {
     text-align: center;
     font-size: 36px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .CMSpagewrapper form label {
     display: block;
     margin-bottom: 5px;
     font-size: 16px;
-    font-weight: 700
+    font-weight: bold;
 }
 
 .CMSpagewrapper form input[type="text"],
@@ -429,7 +449,7 @@ ul li a {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 10px;
-    resize: vertical
+    resize: vertical;
 }
 
 .CMSpagewrapper form button {
@@ -441,13 +461,13 @@ ul li a {
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: bold;
     cursor: pointer;
-    margin-top: 22px
+    margin-top: 22px;
 }
 
 .CMSpagewrapper form button:hover {
-    background-color: #555
+    background-color: #555;
 }
 
 .CMSpagewrapper form #contentErr,
@@ -455,7 +475,7 @@ ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ff0
+    background-color: yellow;
 }
 
 .forumwrapper {
@@ -464,7 +484,7 @@ ul li a {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
 }
 
 #rightside {
@@ -475,7 +495,7 @@ ul li a {
     z-index: -1;
     display: flex;
     justify-content: center;
-    align-items: flex-end
+    align-items: flex-end;
 }
 
 #writenew {
@@ -484,22 +504,24 @@ ul li a {
     height: 80px;
     width: 80px;
     padding: 10px;
-    margin-bottom: 80px
+    margin-bottom: 80px;
 }
+
+#writenew:hover {}
 
 #writenew img {
     height: 40px;
-    width: auto
+    width: auto;
 }
 
 #post-container {
     width: 70%;
     height: 100%;
-    background-color: #f5f5f5
+    background-color: whitesmoke;
 }
 
 .post {
     background-color: #202020;
     border: 2px solid gray;
-    border-radius: 20px
+    border-radius: 20px;
 }
