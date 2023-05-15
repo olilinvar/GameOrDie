@@ -40,7 +40,7 @@ ul li a {
     height: 100vh;
     width: 100%;
     color: #fff;
-    
+
 }
 
 .landing>img {
@@ -58,7 +58,6 @@ ul li a {
     align-items: center;
     width: 100%;
     box-shadow: 0 0 1px 0;
-    color: #fff;
     z-index: 1;
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
     top: 0
@@ -78,7 +77,6 @@ ul li a {
 .navbar ul li {
     background: none;
     border: none;
-    color: #fff;
     font-family: "Silkscreen";
     font-weight: 700;
     font-size: 1.5rem;
@@ -87,17 +85,16 @@ ul li a {
     text-align: left;
     text-decoration: none;
     cursor: pointer;
-    transition: .04s
+    transition: .3s
 }
 
 .navbar ul li:hover {
-    color: #ff2975;
     transform: scale(1.1);
-    transition: .1s
+    transition: .3s
 }
 
 .navbar ul li:hover a {
-    color: #ff2975;
+    color: #FC0FC0;
     transition: .15s
 }
 
@@ -262,13 +259,17 @@ ul li a {
     border: none;
     font-family: "Silkscreen";
     font-weight: 900;
-    font-size: 16px;
-    background-color: #FDFF00
+    font-size: 18px;
+    background-color: #00FF00;
+    border-radius: 4px;
+    color: var(--black-light6);
+    transition: .2s
 }
 
 .landingbox .landingbox2 button:hover {
     transform: scale(1.1);
-    background-color: #fff
+    background-color: #85FF85;
+    transition: .1s
 }
 
 .landingbox .landingbox2 h1 {
@@ -359,7 +360,7 @@ ul li a {
     width: 320px;
     height: 240px;
     color: #fff;
-    border: 3px solid #ff2975;
+    border: 3px solid #FC0FC0;
     background: #222;
     padding: 10px
 }
@@ -455,7 +456,7 @@ ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ff0
+    background-color: #FFFF1F;
 }
 
 .forumwrapper {
@@ -479,7 +480,7 @@ ul li a {
 }
 
 #writenew {
-    background-color: #ff2975;
+    background-color: #FC0FC0;
     border-radius: 100%;
     height: 80px;
     width: 80px;
