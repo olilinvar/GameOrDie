@@ -22,11 +22,6 @@ body {
     color: #fff;
 }
 
-ul li a {
-    color: #fff;
-    text-decoration: none
-}
-
 .pagewrapper {
     display: flex;
     flex-direction: column;
@@ -64,7 +59,6 @@ ul li a {
 }
 
 .navbar ul {
-    display: inline;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -88,14 +82,16 @@ ul li a {
     transition: .3s
 }
 
-.navbar ul li:hover {
-    transform: scale(1.1);
-    transition: .3s
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.navbar ul li:hover a {
+.navbar ul li a:hover {
     color: #FC0FC0;
-    transition: .15s
+    transition: .15s;
+    transform: scale(1.1);
+    display: inline-block;
 }
 
 .toggle-button {
@@ -146,13 +142,11 @@ ul li a {
     }
 
     .navbar ul li a {
-        display: flex;
         justify-content: center;
         width: 100%;
         background-color: var(--black-light12);
         padding: 10px;
         border-bottom: solid 3px #3f3f3f;
-        display: none
     }
 
     .navbar.active {
@@ -161,7 +155,7 @@ ul li a {
 
     .navbar ul li a:hover {
         transform: scale(1);
-        background-color: var(--black-light18)
+        background-color: var(--black-light18);
     }
 
     .navbar img {
