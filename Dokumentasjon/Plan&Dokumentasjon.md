@@ -86,6 +86,7 @@ Denne uken gjorde jeg ferdig CMS, det kjører lokalt og har ikke mye styling men
   + Brukertesting
 
 **Ukas oppsummering:**
+På mandag laget jeg et enkelt portfolio oppsett. Jeg har innsett at CSS'en min er ganske rotete, det må jeg finne ut av.
 <p></p>
 </details>
 
@@ -154,15 +155,15 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 > - [x] Laget prosjektbeskrivelse
 > - [x] Laget skisse i XD
 > - [ ] Laget designmanual
-> - [ ] Laget tydlig fargeprofil
+> - [x] Laget tydlig fargeprofil
 > - [ ] Laget porteføljeside
 > - [x] Laget navigasjonsbar + logo på alle sider
 > - [ ] Laget SoMe reklame på 10 sekunder
 > - [ ] Laget passende grafikk og illustrasjoner
-> - [ ] Laget profilerende tekst om bedriften
+> - [x] Laget profilerende tekst om bedriften
 > - [ ] Laget brødtekst
 > - [x] Laget CTA (call to action)
-> - [ ] Laget hamburgermeny for mobil
+> - [x] Laget hamburgermeny for mobil
 
 ---
 
@@ -185,7 +186,8 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 > - [ ] Nettsiden bruker virkemidler
 > - [ ] Nettsiden fanger oppmerksomheten
 
-### Ekstra for CMS:
+### Ekstra:
 
-> - [x] Grunnleggene oppsett
+> - [x] Grunnleggene oppsett CMS
 > - [ ] Sette opp Firebase
+> - [ ] Fjerne all ubrukt CSS (bruke verktøy som PurgeCSS?)
