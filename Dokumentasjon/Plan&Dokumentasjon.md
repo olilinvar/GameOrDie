@@ -86,7 +86,8 @@ Denne uken gjorde jeg ferdig CMS, det kjører lokalt og har ikke mye styling men
   + Brukertesting
 
 **Ukas oppsummering:**
-På mandag laget jeg et enkelt portfolio oppsett. Jeg har innsett at CSS'en min er ganske rotete, det må jeg finne ut av.
+På mandag laget jeg et enkelt portfolio oppsett. Jeg har innsett at CSS'en min er ganske rotete, det må jeg finne ut av. Torsdag: Laget ferdig en kort(10s) og en lang(18s) SoMe reklame. Den klar, tydlig og godt tilpasset målgruppen! 
+Ble også ferdig med portfolio siden, det var knotete fordi jeg måtte inn i alle projektene og endre kode, bytte masse bilder og ikoner fra png med 1 lag komprimering til webmp med 2 lag komprimering. Filstørrelser er så små som mulig. I portfolio så linker jeg til en gammel terminoppgave med sin helt egen portfolio som skal være fungerene, derfor blir det mange filer å om-linke og komprimere.
 <p></p>
 </details>
 
@@ -156,9 +157,9 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 > - [x] Laget skisse i XD
 > - [ ] Laget designmanual
 > - [x] Laget tydlig fargeprofil
-> - [ ] Laget porteføljeside
+> - [x] Laget porteføljeside
 > - [x] Laget navigasjonsbar + logo på alle sider
-> - [ ] Laget SoMe reklame på 10 sekunder
+> - [x] Laget SoMe reklame på 10 sekunder
 > - [ ] Laget passende grafikk og illustrasjoner
 > - [x] Laget profilerende tekst om bedriften
 > - [ ] Laget brødtekst
@@ -169,7 +170,7 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 
 ### Spør seg selv!
 
-> - [ ] Nettsiden er responisv
+> - [x] Nettsiden er responisv
 > - [ ] Nettsiden er interaktiv
 > - [ ] Nettsider er brukervennlig
 > - [ ] Nettsiden er brukertestet og testene er dokumentert
@@ -178,16 +179,19 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 > - [ ] Nettsiden følger regelverk og etikk
 > - [ ] Nettsiden følger universell utforming
 > - [ ] Nettsiden følger oppdragsgivers krav
-> - [ ] Nettsiden har et gjennomgående design og tema
+> - [x] Nettsiden har et gjennomgående design og tema
 > - [x] Nettsiden har oversiktlig mappestruktur
 > - [x] Nettsiden har riktige filtyper og navn
 > - [x] Nettsiden har små filstørrelser
-> - [ ] Nettsiden laster på kort tid
+> - [x] Nettsiden laster på kort tid
 > - [ ] Nettsiden bruker virkemidler
-> - [ ] Nettsiden fanger oppmerksomheten
+> - [x] Nettsiden fanger oppmerksomheten
 
 ### Ekstra:
 
 > - [x] Grunnleggene oppsett CMS
 > - [ ] Sette opp Firebase
 > - [ ] Fjerne all ubrukt CSS (bruke verktøy som PurgeCSS?)
+> - [ ] Linke Portfolio
+> - [ ] Lage FAQ og LAN rows
+> - [ ] Sette opp Firebase
