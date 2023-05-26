@@ -1,0 +1,122 @@
+body {
+    background-color: #94BEE6;
+    padding: 0;
+    margin: 0;
+    background-image: url(Oppdrag1/images/bg1.jpg);
+    background-attachment: fixed;
+    /* ^makes the background non-scrollable  */
+    background-position: right bottom, left top;
+    background-position-y: 195px;
+    background-repeat: repeat;
+    background-size: cover;
+    /* ^makes the image cover the screen and adjusting the y axis to get a better position */
+
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    font-family: Tahoma;
+    /* ^this is a good starting point for whats to come, margin left and right set to auto centers the contents within the wrapper */
+
+}
+
+.fixed_header {
+    display: flex;
+    margin-top: -5px;
+    width: 100%;
+    height: 160px;
+    position: fixed;
+    background: #fff;
+    z-index: 1;
+    /* ^specifying that the header is fixed, im also telling the program to set a greater value using z-index then my content_box so the header covers the content box when scrolling */
+
+}
+
+#logotext {
+    width: 266px;
+    display: flex;
+
+}
+
+#logopanda {
+    width: 179px;
+    display: flex;
+
+}
+
+#fixed_header_text {
+    width: auto;
+    display: flex;
+
+}
+
+.content_box {
+    display: flex;
+    justify-content: center;
+    padding: 0px 100px;
+    padding-bottom: 100px;
+    width: 60%;
+    height: auto;
+    border: 5px solid #fff;
+    margin-top: 195px;
+    background-color: rgb(50, 50, 50, 0.5);
+    -webkit-backdrop-filter: blur(29px);
+    backdrop-filter: blur(29px) brightness(1);
+    /* ^im making the content_box blur out the background without blurring the box_content by using backdrop-filter */
+}
+
+.box_content {
+    font-size: 28px;
+    color: #94BEE6;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    /* ^im telling the program to set all headers to the color white so it catches the eyes */
+}
+
+a {
+    color: #94BEE6;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: auto;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #94BEE6;
+}

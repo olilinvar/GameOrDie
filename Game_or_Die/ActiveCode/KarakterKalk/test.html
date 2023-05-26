@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grades Calculator</title>
+    <style>
+        table {
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Grades Calculator</h1>
+    <table id="gradesTable">
+        <tr>
+            <th>Subject</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>Mathematics</td>
+            <td>
+                <input type="radio" name="mathematics" value="1">1
+                <input type="radio" name="mathematics" value="2">2
+                <input type="radio" name="mathematics" value="3">3
+                <input type="radio" name="mathematics" value="4">4
+                <input type="radio" name="mathematics" value="5">5
+                <input type="radio" name="mathematics" value="6">6
+            </td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>
+                <input type="radio" name="science" value="1">1
+                <input type="radio" name="science" value="2">2
+                <input type="radio" name="science" value="3">3
+                <input type="radio" name="science" value="4">4
+                <input type="radio" name="science" value="5">5
+                <input type="radio" name="science" value="6">6
+            </td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td>
+                <input type="radio" name="english" value="1">1
+                <input type="radio" name="english" value="2">2
+                <input type="radio" name="english" value="3">3
+                <input type="radio" name="english" value="4">4
+                <input type="radio" name="english" value="5">5
+                <input type="radio" name="english" value="6">6
+            </td>
+        </tr>
+    </table>
+    <p style="text-align: center;">
+        <button id="calculateButton">Calculate Average</button>
+    </p>
+    <p id="average" style="text-align: center; font-weight: bold;"></p>
+
+    <script>
+        const calculateButton = document.getElementById("calculateButton");
+        calculateButton.addEventListener("click", calculateAverage);
+        function calculateAverage() {
+            var subjects = document.getElementsByClassName("subject");
+            var total = 0;
+            var count = 0;
+            for (var i = 0; i < subjects.length; i++) {
+                var subject = subjects[i];
+                var grade = getSelectedGrade(subject);
+                if (grade != -1) {
+                    total += grade;
+                    count++;
+                }
+            }
+            if (count > 0) {
+                var average = total / count;
+                document.getElementById("average").innerHTML = "Average Grade: " + average;
+            } else {
+                document.getElementById("average").innerHTML = "No grades selected.";
+            }
+        }
+
+        function getSelectedGrade(subject) {
+            var gradeButtons = subject.getElementsByClassName("grade");
+            for (var i = 0; i < gradeButtons.length; i++) {
+                var gradeButton = gradeButtons[i];
+                if (gradeButton.checked) {
+                    return parseInt(gradeButton.value);
+                }
+            }
+            return -1;
+        }
+    </script>
+
+
+</body>

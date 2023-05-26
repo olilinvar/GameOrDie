@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bingo</title>
+</head>
+
+<body>
+    <div class="pagewrapper">
+        <div id="d1">
+            <div class="rainbow"></div>
+            <div class="d1fill">
+                <div id="d1p1">
+                    <img src="img/Norsk_Tipping_Edited.svg" alt="Norsk Tipping Logo">
+                </div>
+
+                <div id="d1p2">
+                    <h1>BABUSHKA'S BINGO</h1>
+                </div>
+                <div id="d1p3">
+                    <img src="img/Norsk_Tipping_Edited.svg" alt="Norsk Tipping Logo">
+                </div>
+            </div>
+        </div>
+        <div id="d2">
+            <div class="d2tophalf">
+                <h2>Choose amount of numbers in pool</h2>
+            </div>
+            <div class="d2bottomhalf">
+                <input type="number" id="d2Input" placeholder="type" name="name">
+                <button id="d2btn">SUBMIT</button>
+            </div>
+        </div>
+        <div id="d3">
+            <button id="d3btn">GENERATE RANDOM NUMBERS</button>
+        </div>
+        <div id="d4">
+            <h2>Your numbers:</h2>
+            <br>
+            <div id="myRandomNumHTML"></div>
+        </div>
+        <div id="d5" onchange="unlockSubmit()">
+            <input type="number" placeholder="type" id="d5input1" name="field"
+                onchange="checkDuplicatesAndLimitValue(this)">
+            <input type="number" placeholder="type" id="d5input2" name="field"
+                onchange="checkDuplicatesAndLimitValue(this)">
+            <input type="number" placeholder="type" id="d5input3" name="field"
+                onchange="checkDuplicatesAndLimitValue(this)">
+            <input type="number" placeholder="type" id="d5input4" name="field"
+                onchange="checkDuplicatesAndLimitValue(this)">
+            <input type="number" placeholder="type" id="d5input5" name="field"
+                onchange="checkDuplicatesAndLimitValue(this)">
+            <button id="d5submit">SUBMIT GUESS</button>
+            <div id="d5_2"></div>
+        </div>
+        <div id="d6">
+            <h2>Result:</h2>
+            <br>
+            <div id="resultHTML"></div>
+            <button id="d6btn">RESET</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cookie Cliker</title>
+</head>
+
+<body>
+    <div class="horizontalwrap">
+        <ul class="menu">
+            <li>save</li>
+            <li>load</li>
+            <li>lorem</li>
+            <li>lorem</li>
+        </ul>
+        <div class="pagewrapper">
+            <div id="bakerynameHTML"></div>
+            <div class="totalcountbox">
+                <h2>You have</h2>
+                <h1><span id="totalCookiesHTML">0</span></h1>
+                <h2>Cookies</h2>
+            </div>
+            <div id="cpsHTML">
+            </div>
+            <div class="cookiebox"><img src="cookie.webp" alt="cookie" onclick="addCookies()"></div>
+            <div class="grannybox"><img src="granny.png" alt="granny">
+                <div class="grannyinfo">
+                    <p><span class="boxheader">Grandma</span>
+                        <br>
+                        Current cost:<span id="grannyinfo_cost">20</span>$
+                        <br>
+                        Grandmas owned:<span id="grannyinfo_owned">0</span>
+                    </p>
+                </div><button onclick="buyGrandmas()">Buy Grandma</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

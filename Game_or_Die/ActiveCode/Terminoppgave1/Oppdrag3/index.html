@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stemmeteller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>Stemmeteller</h2>
+        </header>
+        <div class="content">
+            <div class="contentleft">
+                <div class="contentbox">
+                    <div class="votebox">
+                        <div class="votebar">
+                            <img class="leftimg" src="imgs/ap.jpg" alt="">
+                            <div class="votebartxt"></div>
+                            <div class="rightbtn">
+                                <button id="apbtn" onclick="apvote()">vote</button>
+                            </div>
+                        </div>
+                        <div class="votebar">
+                            <img class="rightimg" src="imgs/frp.jpg" alt="">
+                            <div class="votebartxt"></div>
+                            <div class="leftbtn">
+                                <button id="frpbtn" onclick="frpvote()">vote</button>
+                            </div>
+                        </div>
+                        <div class="votebar">
+                            <img class="leftimg" src="imgs/hoyre.png" alt="">
+                            <div class="votebartxt"></div>
+                            <div class="rightbtn">
+                                <button id="hoyrebtn" onclick="hoyrevote()">vote</button>
+                            </div>
+                        </div>
+                        <div class="votebar">
+                            <img class="rightimg" src="imgs/sp.png" alt="">
+                            <div class="votebartxt"></div>
+                            <div class="leftbtn">
+                                <button id="spbtn" onclick="spvote()">vote</button>
+                            </div>
+                        </div>
+                        <div class="votebar">
+                            <img class="leftimg" src="imgs/sv.png" alt="">
+                            <div class="votebartxt"></div>
+                            <div class="rightbtn">
+                                <button id="svbtn" onclick="svvote()">vote</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contentright">
+                <div class="contentbox">
+                    <div class="countbox">
+                        <div class="winner">
+                            <p>x vant valget med:<p>
+                            <div id="winnercount">0</div>
+                            <p>stemmer!</p>
+                        </div>
+                        <div class="counters">
+                            <div id="apcount">0<div id="apconttxt">ap</div></div>
+                            <div id="frpcount">0<div id="frpcounttxt">frp</div></div>
+                            <div id="hoyrecount">0<div id="hoyrecounttxt">høyre</div></div>
+                            <div id="spcount">0<div id="spcounttxt">sp</div></div>
+                            <div id="svcount">0 <div id="svcounttxt">sv</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="/Oppdrag3/script.js"></script>
+</body>
+</html>

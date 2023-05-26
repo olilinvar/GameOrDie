@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* height: 200vh; */
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pagewrapper {
+    width: 100%;
+    /* height: 200vh; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.fagboxwrapper {
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    background-color: grey;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.fagbox {
+    background-color: #bbbbbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 40px;
+    box-shadow: 0 0 2px #000 inset;
+    width: 782px;
+}
+
+.fag {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 0 2px #000 inset;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* .fag1 {
+    background-color: lightgrey;
+}
+
+.fag2 {
+    background-color: grey;
+} */
+
+
+@media (max-width: 782px) {
+    /*gjør siden responsiv for mindre enheter!*/
+
+    .fagbox {
+        width: 80%;
+    }
+
+    .fag {
+        width: 100%;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .fag .btntxtwrapper {
+        width: 100% !important;
+        /* widthen her overstyrer ikke widthen utenfor media query derfor trenger jeg !important */
+        height: 50%;
+        border-right: none !important;
+    }
+
+    .fag .radios {
+        width: 100% !important;
+        /* widthen her overstyrer ikke widthen utenfor media query derfor trenger jeg !important */
+        height: 50%;
+    }
+
+}
+
+.fag .btntxtwrapper {
+    height: 100%;
+    width: 40%;
+    border-right: 3px dotted #4c8bf5;
+    display: flex;
+    align-items: center;
+}
+
+.fag .btntxtwrapper button {
+    border-radius: 10px;
+    float: left;
+    margin: 10px;
+}
+
+.fag .btntxtwrapper .fagtxt {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(255, 200, 200);
+    font-weight: 600;
+    margin-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0 0 3px #000 inset;
+}
+
+.fag .btntxtwrapper .fagtxt p {
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+
+.fag .radios {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 60%;
+    height: 100%;
+}
+
+.radio {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio_input {
+    display: none;
+    /*dette gjør at den orginale radio boksen blir usynlig slik at jeg kan legge en div med styling over*/
+}
+
+.radio_box {
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(88, 88, 88);
+    background-color: #ffa20050;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    flex-shrink: 0;
+    font-size: 30px;
+    transition: 0.2s;
+}
+
+.radio_input:checked+.radio_box {
+    background: #4c8bf5;
+    color: white;
+    transition: 0.3s;
+    transform: scale(1.15);
+    box-shadow: 3px 3px 5px #909090,
+        -3px -3px 5px #ffffff;
+}
+
+.resultatwrapper {
+    background-color: #bbbbbb;
+    box-shadow: 0 0 2px #000 inset;
+}
+
+
+#HTMLresultat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    margin: 20px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 0 2px #000 inset;
+    height: 120px;
+    width: 200px;
+    border: 3px solid #4c8bf5;
+}

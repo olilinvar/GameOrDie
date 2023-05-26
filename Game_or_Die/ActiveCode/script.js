@@ -12,10 +12,6 @@ sort by date and popularity
 */
 
 
-
-
-//[===============================[makePost JS]===================================
-
 const posts = [];
 
 const toggleButton = document.getElementsByClassName("toggle-button")[0];
@@ -29,6 +25,8 @@ toggleButton.addEventListener("click", () => {
     }
 });
 
+
+//[===============================[makePost JS]===================================
 
 function init() {
     document.getElementById("submit-btn").addEventListener("click", callGetData);
@@ -158,3 +156,6 @@ window.addEventListener("load", () => {
         handlebarsLoad()
     }
 })
+
+
+//[===============================[Portfolio]===================================

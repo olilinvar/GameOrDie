@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Karakter Kalkulator</title>
+</head>
+
+<body>
+    <div class="pagewrapper">
+        <div class="fagboxwrapper">
+            <div class="title">
+                <h1>Karakter Kalkulator</h1>
+            </div>
+            <div class="fagbox">
+                <div class="fag" id="norsk" onchange="getValue(this)">
+                    <div class="btntxtwrapper"><button><img id="leftimg"
+                                src="images_icons/close_FILL0_wght400_GRAD0_opsz48.svg" alt="fjern fag"></button>
+                        <div class="fagtxt">
+                            <p>Norsk</p>
+                        </div>
+                    </div>
+                    <div class="radios">
+                        <!-- For at flere radios skal funke i denne sammenhengen så må label "for" ha samme verdi som input "id" 
+                        Jeg må også ha samme input name for alle radios inni et fag for at det skal fungere-->
+                        <label class="radio" for="myRadioNorsk1"><input class="radio_input" type="radio"
+                                name="radioName_Norsk" id="myRadioNorsk1" value="1">
+                            <span class="radio_box">1<span>
+                        </label>
+                        <label class="radio" for="myRadioNorsk2"><input class="radio_input" type="radio"
+                                name="radioName_Norsk" id="myRadioNorsk2" value="2">
+                            <span class="radio_box">2</span>
+                        </label>
+                        <label class="radio" for="myRadioNorsk3"><input class="radio_input" type="radio"
+                                name="radioName_Norsk" id="myRadioNorsk3" value="3">
+                            <span class="radio_box">3</span>
+                        </label>
+                        <label class="radio" for="myRadioNorsk4"><input class="radio_input" type="radio"
+                                name="radioName_Norsk" id="myRadioNorsk4" value="4">
+                            <span class="radio_box">4</span>
+                        </label>
+                        <label class="radio" for="myRadioNorsk5"><input class="radio_input" type="radio"
+                                name="radioName_Norsk" id="myRadioNorsk5" value="5">
+                            <span class="radio_box">5</span>
+                        </label>
+                        <label class="radio" for="myRadioNorsk6"><input class="radio_input" type="radio"
+                                name="radioName_Norsk" id="myRadioNorsk6" value="6">
+                            <span class="radio_box">6</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="fag" id="engelsk" onchange="getValue(this)">
+                    <div class="btntxtwrapper"><button><img id="leftimg"
+                                src="images_icons/close_FILL0_wght400_GRAD0_opsz48.svg" alt="fjern fag"></button>
+                        <div class="fagtxt">
+                            <p>Engelsk</p>
+                        </div>
+                    </div>
+                    <div class="radios">
+                        <label class="radio" for="myRadioEngelsk1"><input class="radio_input" type="radio"
+                                name="radioName_Engelsk" id="myRadioEngelsk1" value="1">
+                            <span class="radio_box">1<span>
+                        </label>
+                        <label class="radio" for="myRadioEngelsk2"><input class="radio_input" type="radio"
+                                name="radioName_Engelsk" id="myRadioEngelsk2" value="2">
+                            <span class="radio_box">2</span>
+                        </label>
+                        <label class="radio" for="myRadioEngelsk3"><input class="radio_input" type="radio"
+                                name="radioName_Engelsk" id="myRadioEngelsk3" value="3">
+                            <span class="radio_box">3</span>
+                        </label>
+                        <label class="radio" for="myRadioEngelsk4"><input class="radio_input" type="radio"
+                                name="radioName_Engelsk" id="myRadioEngelsk4" value="4">
+                            <span class="radio_box">4</span>
+                        </label>
+                        <label class="radio" for="myRadioEngelsk5"><input class="radio_input" type="radio"
+                                name="radioName_Engelsk" id="myRadioEngelsk5" value="5">
+                            <span class="radio_box">5</span>
+                        </label>
+                        <label class="radio" for="myRadioEngelsk6"><input class="radio_input" type="radio"
+                                name="radioName_Engelsk" id="myRadioEngelsk6" value="6">
+                            <span class="radio_box">6</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="fag" id="naturfag" onchange="getValue(this)">
+                    <div class="btntxtwrapper"><button><img id="leftimg"
+                                src="images_icons/close_FILL0_wght400_GRAD0_opsz48.svg" alt="fjern fag"></button>
+                        <div class="fagtxt">
+                            <p>Naturfag</p>
+                        </div>
+                    </div>
+                    <div class="radios">
+                        <label class="radio" for="myRadioNaturfag1"><input class="radio_input" type="radio"
+                                name="radioName_Naturfag" id="myRadioNaturfag1" value="1">
+                            <span class="radio_box">1<span>
+                        </label>
+                        <label class="radio" for="myRadioNaturfag2"><input class="radio_input" type="radio"
+                                name="radioName_Naturfag" id="myRadioNaturfag2" value="2">
+                            <span class="radio_box">2</span>
+                        </label>
+                        <label class="radio" for="myRadioNaturfag3"><input class="radio_input" type="radio"
+                                name="radioName_Naturfag" id="myRadioNaturfag3" value="3">
+                            <span class="radio_box">3</span>
+                        </label>
+                        <label class="radio" for="myRadioNaturfag4"><input class="radio_input" type="radio"
+                                name="radioName_Naturfag" id="myRadioNaturfag4" value="4">
+                            <span class="radio_box">4</span>
+                        </label>
+                        <label class="radio" for="myRadioNaturfag5"><input class="radio_input" type="radio"
+                                name="radioName_Naturfag" id="myRadioNaturfag5" value="5">
+                            <span class="radio_box">5</span>
+                        </label>
+                        <label class="radio" for="myRadioNaturfag6"><input class="radio_input" type="radio"
+                                name="radioName_Naturfag" id="myRadioNaturfag6" value="6">
+                            <span class="radio_box">6</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="fag" id="fremmedspråk" onchange="getValue(this)">
+                    <div class="btntxtwrapper"><button><img id="leftimg"
+                                src="images_icons/close_FILL0_wght400_GRAD0_opsz48.svg" alt="fjern fag"></button>
+                        <div class="fagtxt">
+                            <p>Fremmedspråk</p>
+                        </div>
+                    </div>
+                    <div class="radios">
+                        <label class="radio" for="myRadioFremmedspråk1"><input class="radio_input" type="radio"
+                                name="radioName_Fremmedspråk" id="myRadioFremmedspråk1" value="1">
+                            <span class="radio_box">1<span>
+                        </label>
+                        <label class="radio" for="myRadioFremmedspråk2"><input class="radio_input" type="radio"
+                                name="radioName_Fremmedspråk" id="myRadioFremmedspråk2" value="2">
+                            <span class="radio_box">2</span>
+                        </label>
+                        <label class="radio" for="myRadioFremmedspråk3"><input class="radio_input" type="radio"
+                                name="radioName_Fremmedspråk" id="myRadioFremmedspråk3" value="3">
+                            <span class="radio_box">3</span>
+                        </label>
+                        <label class="radio" for="myRadioFremmedspråk4"><input class="radio_input" type="radio"
+                                name="radioName_Fremmedspråk" id="myRadioFremmedspråk4" value="4">
+                            <span class="radio_box">4</span>
+                        </label>
+                        <label class="radio" for="myRadioFremmedspråk5"><input class="radio_input" type="radio"
+                                name="radioName_Fremmedspråk" id="myRadioFremmedspråk5" value="5">
+                            <span class="radio_box">5</span>
+                        </label>
+                        <label class="radio" for="myRadioFremmedspråk6"><input class="radio_input" type="radio"
+                                name="radioName_Fremmedspråk" id="myRadioFremmedspråk6" value="6">
+                            <span class="radio_box">6</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="fag" id="samfunnsfag" onchange="getValue(this)">
+                    <div class="btntxtwrapper"><button><img id="leftimg"
+                                src="images_icons/close_FILL0_wght400_GRAD0_opsz48.svg" alt="fjern fag"></button>
+                        <div class="fagtxt">
+                            <p>Samfunnsfag</p>
+                        </div>
+                    </div>
+                    <div class="radios">
+                        <label class="radio" for="myRadioSamfunnsfag1"><input class="radio_input" type="radio"
+                                name="radioName_Samfunnsfag" id="myRadioSamfunnsfag1" value="1">
+                            <span class="radio_box">1<span>
+                        </label>
+                        <label class="radio" for="myRadioSamfunnsfag2"><input class="radio_input" type="radio"
+                                name="radioName_Samfunnsfag" id="myRadioSamfunnsfag2" value="2">
+                            <span class="radio_box">2</span>
+                        </label>
+                        <label class="radio" for="myRadioSamfunnsfag3"><input class="radio_input" type="radio"
+                                name="radioName_Samfunnsfag" id="myRadioSamfunnsfag3" value="3">
+                            <span class="radio_box">3</span>
+                        </label>
+                        <label class="radio" for="myRadioSamfunnsfag4"><input class="radio_input" type="radio"
+                                name="radioName_Samfunnsfag" id="myRadioSamfunnsfag4" value="4">
+                            <span class="radio_box">4</span>
+                        </label>
+                        <label class="radio" for="myRadioSamfunnsfag5"><input class="radio_input" type="radio"
+                                name="radioName_Samfunnsfag" id="myRadioSamfunnsfag5" value="5">
+                            <span class="radio_box">5</span>
+                        </label>
+                        <label class="radio" for="myRadioSamfunnsfag6"><input class="radio_input" type="radio"
+                                name="radioName_Samfunnsfag" id="myRadioSamfunnsfag6" value="6">
+                            <span class="radio_box">6</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="resultatwrapper">
+                <div id="HTMLresultat">snitt = 0</div>
+            </div>
+
+        </div>
+    </div>
+    <div id="test"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- bruke form med class som wrapper rundt input tags istedenfor divs? hvorfor? bør jeg? -->

@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font: 400 20px "Roboto", sans-serif, monospace;
+  background-color: #1b1b1b;
+}
+
+header {/*10 viewport height header med indre elementer sentrert*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #3b3b3b;
+  height: 10vh;
+}
+
+.content {/*content er samme som body bare uten header i toppen, content har 90 viewport height. Header(10vh) + content (90vh) = en full side (100vh)*/
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.content .contentleft,/*to classes inni content som deler siden i to*/
+.content .contentright {
+  display: flex;
+  background-color: #e0e0e0;
+  width: 100%;
+  height: 90vh;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentbox {/*contentbox er en felles class som ligger i både contentleft og contentright*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 90%;
+  border-radius: 40px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+}
+
+@media (max-width: 768px) {/*når nettsiden krymper under 786px vil content bytte til column layout istendenfor row, dette gjør siden mer responsiv og bruker på mindre enheter*/
+  .content {
+    flex-direction: column;
+  }
+}
+
+.contentbox .votebox {/*votebox ligger inni contentbox. Her ligger innholdet til selve avstemmingen på venstre side av skjermen*/
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 90%;
+  height: 90%;
+  border-radius: 40px;
+  box-shadow: inset 10px 10px 25px #b8b8b8, inset -10px -10px 25px #ffffff;
+}
+
+.votebox .votebar {/*en rekke med bokser som har fått {flex-flow: column} fra parent. Her skal partiene ligge;*/
+  height: 100px;
+  width: 90%;
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: 10px 10px 25px #bebebe, -10px 0px 25px #ffffff;
+  overflow: hidden;
+}
+
+.votebox .votebar .rightbtn {/*jeg vil gjøre det umulig å stemme feil parti med et uhell. Derfor er annenhver knapp plassert til høyre med {float: right;}*/
+  float: right;
+  width: 100px;
+  height: 100%;
+}
+
+.votebox .votebar .leftbtn {/*jeg lagde en egen .leftbtn class for å sikre at knappene alltid vil tvinges til en side av .votebar*/
+  float: left;
+  width: 100px;
+  height: 100%;
+}
+
+.rightbtn button, /*ønsker ikke unødvendige divs eller unødvendige mange css linjer, derfor bruker jeg begge btn classes til endring av utseende sammtidig istedenfor å opprette en class kun for endring av utseende*/
+.leftbtn button {
+  width: 100px;
+  height: 100px;
+  font-size: 1em;
+  font-weight: 800;
+  background-color: cornflowerblue;
+  color: greenyellow;
+  border-radius: 20px;
+}
+
+.rightbtn button:hover,/*visuell feedback i nettsiden er viktig for at brukere vet hva man kan klikke på osv*/
+.leftbtn button:hover {
+  background-color: darkseagreen;
+  color: brown;
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+.rightbtn button:active,/*css har ignen onclick funskjon i seg selv, men :active er det nermeste alternativet om jeg ikke vil gjøre det i JS*/
+.leftbtn button:active {
+  background-color: rgb(0, 255, 0);
+  transition: 0.2s;
+  transform: scale(0.95);
+}
+
+.votebar .rightimg { /*på samme måte som btn har annenhver høyre og venstre er bilder også slik. imgs er plassert på motsatt side av btns for å forhindre forvirring av partier*/
+  float: right;
+  height: 100px;
+  width: 100px;
+}
+
+.votebar .leftimg {
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+
+img {
+  background-color: #fff;
+}
+
+.countbox { /*nå som jeg har fikset votebars med btn's og img's kan jeg gå videre til å fikse høyre del av nettsiden, altså opptellingen av stemmene */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 90%;
+  height: 90%;
+  border-radius: 40px;
+  background: #e0e0e0;
+  box-shadow: inset 10px 10px 25px #b8b8b8, inset -10px -10px 25px #ffffff;
+}
+
+.winner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: 200px;
+  margin: 40px;
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: 10px 10px 25px #bebebe, -10px -10px 25px #ffffff;
+}
+
+#winnercount { /*partiet med mest antall stemmer får en ekstra boks så det blir mer tydlig hvem som vant avstemmingen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100px;
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: 10px 10px 25px #bebebe, -10px -10px 25px #ffffff;
+  font-size: 3em;
+}
+
+.counters {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 40px;
+  width: 90%;
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: 10px 10px 25px #bebebe, -10px -10px 25px #ffffff;
+}
+
+#apcount,
+#frpcount,
+#hoyrecount,
+#spcount,
+#svcount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  font-weight: 800;
+  height: 80px;
+  width: 80px;
+  border-radius: 150px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 11px 11px 22px #c1c1c1, -11px -11px 22px #ffffff;
+}
+
+/* .apcontendor > div,
+.frpcontendor > div,
+.hoyrecontendor > div,
+.spcontendor > div,
+.svcontendor > div {
+  
+} */
+
+.votebartxt {
+  color: #fff;
+}
+
+/*jeg må lage votebar i flexbox. bruke flex end og start/space between for å ha annenhver knapp på høyre of annenhvert bilde på venstre*/
+/*kanskje bytte annenhver div med space between?*/
