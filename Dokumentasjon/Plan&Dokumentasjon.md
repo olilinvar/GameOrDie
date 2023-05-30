@@ -87,7 +87,15 @@ Denne uken gjorde jeg ferdig CMS, det kjører lokalt og har ikke mye styling men
 
 **Ukas oppsummering:**
 På mandag laget jeg et enkelt portfolio oppsett. Jeg har innsett at CSS'en min er ganske rotete, det må jeg finne ut av. Torsdag: Laget ferdig en kort(10s) og en lang(18s) SoMe reklame. Den klar, tydlig og godt tilpasset målgruppen! 
-Ble også ferdig med portfolio siden, det var knotete fordi jeg måtte inn i alle projektene og endre kode, bytte masse bilder og ikoner fra png med 1 lag komprimering til webmp med 2 lag komprimering. Filstørrelser er så små som mulig. I portfolio så linker jeg til en gammel terminoppgave med sin helt egen portfolio som skal være fungerene, derfor blir det mange filer å om-linke og komprimere.
+Ble også ferdig med portfolio siden, det var knotete fordi jeg måtte inn i alle projektene og endre kode, bytte masse bilder og ikoner fra png med 1 lag komprimering til webmp med 2 lag komprimering. Filstørrelser er så små som mulig. I portfolio så linker jeg til en gammel terminoppgave med sin helt egen portfolio som skal være fungerene, derfor blir det mange filer å om-linke og komprimere. Jeg kjørte all css gjennom et vertkøy som pekte ut hvilken css som ikke var i bruk, det hjalp meg fjerne en del linjer med css
+<p></p>
+
+**Helgen:**
+ + **Lørdag:** Ladge ferdig spill-delen av hovedsiden. Ladge også en interaktiv FAQ greie rett over footeren. Komprimerte og converterte flere bilder til webp **(-400kb av bildemappen)** Har planer om å lage ferdig hjemmesiden og style forum i helgen slik at jeg kan brukerteste og lage designmanual på skolen. **+ 100 linjer css denne dagen**
+  
+ + **Søndag:** Lagde ferdig LAN-delen av hovedsiden, har litt problemer med resonsiviteten på denne delen. Fikset knapp på forum som fører til makePost siden. Stylet også ferdig innlegg på forumet. Alt fra ckeditor blir automatisk formatert med p tags og h tags på forumet. **+ 150 linjer css denne dagen (1075 linjer css totalt (Jeg hater css))**
+<p></p>
+
 <p></p>
 </details>
 
@@ -160,7 +168,7 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 > - [x] Laget porteføljeside
 > - [x] Laget navigasjonsbar + logo på alle sider
 > - [x] Laget SoMe reklame på 10 sekunder
-> - [ ] Laget passende grafikk og illustrasjoner
+> - [x] Laget passende grafikk og illustrasjoner
 > - [x] Laget profilerende tekst om bedriften
 > - [ ] Laget brødtekst
 > - [x] Laget CTA (call to action)
@@ -171,11 +179,11 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 ### Spør seg selv!
 
 > - [x] Nettsiden er responisv
-> - [ ] Nettsiden er interaktiv
+> - [x] Nettsiden er interaktiv
 > - [ ] Nettsider er brukervennlig
 > - [ ] Nettsiden er brukertestet og testene er dokumentert
 > - [ ] Nettsiden er bygget med ryddig kode
-> - [ ] Nettsiden kommuniserer et budskap til målgruppe
+> - [x] Nettsiden kommuniserer et budskap til målgruppe
 > - [ ] Nettsiden følger regelverk og etikk
 > - [ ] Nettsiden følger universell utforming
 > - [ ] Nettsiden følger oppdragsgivers krav
@@ -191,7 +199,11 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 
 > - [x] Grunnleggene oppsett CMS
 > - [ ] Sette opp Firebase
-> - [ ] Fjerne all ubrukt CSS (bruke verktøy som PurgeCSS?)
-> - [ ] Linke Portfolio
-> - [ ] Lage FAQ og LAN rows
-> - [ ] Sette opp Firebase
+> - [x] Fjerne all ubrukt CSS (bruke verktøy som PurgeCSS?)
+> - [ ] Linke alt inne i portfolio
+> - [ ] Linke portfolio i footer
+> - [ ] Linke github i footer 
+> - [x] Lage FAQ og LAN rows
+> - [ ] Sendt til forum etter submit post
+> - [ ] Vise SoMe reklamen på via nettsiden. YouTube?
+> - [ ] Dobbeltsjekke navn på filer, classes, variabler for å forbedre dem

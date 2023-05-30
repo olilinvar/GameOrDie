@@ -72,7 +72,7 @@ const savePost = (title, content, backupContent) => {
 
 const processForm = () => {
     const titleInput = String(document.getElementById("title").value.trim());
-    const contentInput = String(editor.getData().trim().replace(/<p[^>]*>/gi, '').replace(/<\/p>/gi, ''));
+    const contentInput = String(editor.getData().trim());
     //editor.getData() is from the ckeditor library, it gets the input data from ckeditor's textarea
     const backupContent = String(document.getElementById("editor").value.trim());
     //The backupContent variable is a fallback solution in case the ckeditor cdn servers are down

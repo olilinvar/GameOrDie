@@ -27,6 +27,7 @@ const savePost = (title, content, backupContent) => {
 const processForm = () => {
     const titleInput = String(document.getElementById("title").value.trim());
     const contentInput = String(editor.getData().trim());
+    //const contentInput = String(editor.getData().trim().replace(/<p[^>]*>/gi, '').replace(/<\/p>/gi, ''));
     const backupContent = String(document.getElementById("editor").value.trim());
 
     const isTitleValid = validateTitle(titleInput);
