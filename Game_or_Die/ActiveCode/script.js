@@ -1,17 +1,3 @@
-/*
-Mark all invalid text and symbols inside the editor if error appears on submit
-
-Display a fancy error message with errMsg and errField class instead of the titleErr and contentErr id's 
-using class.add inside the if's and else's of processForm()
-
-errField makes the field red to indicate error in said field
-
-add sorting buttons on the viewer page
-sort by date and popularity
-
-*/
-
-
 const posts = [];
 
 const toggleButton = document.getElementsByClassName("toggle-button")[0];

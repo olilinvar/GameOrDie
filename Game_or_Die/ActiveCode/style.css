@@ -685,15 +685,6 @@ details[open] div {
 	padding-bottom: 1em;
 }
 
-details[open]:nth-child(odd) {
-	/* border-bottom: 1px solid var(--myGreen); */
-}
-
-details[open]:nth-child(even) {
-	/* border-bottom: 1px solid var(--myPink); */
-}
-
-
 .faq details:nth-child(odd) {
 	background-color: var(--black-light12);
 	border-left: 2px solid var(--myGreen);
