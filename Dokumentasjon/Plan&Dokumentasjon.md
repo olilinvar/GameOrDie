@@ -107,6 +107,7 @@ Ble også ferdig med portfolio siden, det var knotete fordi jeg måtte inn i all
   + Buffer
 
 **Ukas oppsummering:**
+Linket alt i portfolio. Linket til portfolio og github i footer. Brukertestet litt. Ladge designmanual.
 <p></p>
 </details>
 
@@ -170,7 +171,7 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 > - [x] Laget SoMe reklame på 10 sekunder
 > - [x] Laget passende grafikk og illustrasjoner
 > - [x] Laget profilerende tekst om bedriften
-> - [ ] Laget brødtekst
+> - [x] Laget brødtekst
 > - [x] Laget CTA (call to action)
 > - [x] Laget hamburgermeny for mobil
 
@@ -180,8 +181,8 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 
 > - [x] Nettsiden er responisv
 > - [x] Nettsiden er interaktiv
-> - [ ] Nettsider er brukervennlig
-> - [ ] Nettsiden er brukertestet og testene er dokumentert
+> - [ ] Nettsiden er brukervennlig
+> - [x] Nettsiden er brukertestet og testene er dokumentert
 > - [ ] Nettsiden er bygget med ryddig kode
 > - [x] Nettsiden kommuniserer et budskap til målgruppe
 > - [ ] Nettsiden følger regelverk og etikk
@@ -200,10 +201,34 @@ Nettsiden skal ha et enkelt oppsett uten unødvendig innhold, slik at den blir e
 > - [x] Grunnleggene oppsett CMS
 > - [ ] Sette opp Firebase
 > - [x] Fjerne all ubrukt CSS (bruke verktøy som PurgeCSS?)
-> - [ ] Linke alt inne i portfolio
-> - [ ] Linke portfolio i footer
-> - [ ] Linke github i footer 
+> - [x] Linke alt inne i portfolio
+> - [x] Linke portfolio i footer
+> - [x] Linke github i footer 
 > - [x] Lage FAQ og LAN rows
-> - [ ] Sendt til forum etter submit post
+> - [x] Sendt til forum etter submit post
 > - [ ] Vise SoMe reklamen på via nettsiden. YouTube?
 > - [ ] Dobbeltsjekke navn på filer, classes, variabler for å forbedre dem
+---
+
+<br>
+ 
+## **Brukertesting:**
+
+#### Jeg spurte om 3 ting jeg kunne forbedre med nettsiden
+<br>
+
+**Aleksander sin tilbakemelding:**
+ + "Noe som sier at man har publisert en melding"
+ + "Klikke på logo for å komme tilbake til hjemmesiden"
+
+<br>
+
+### Hva jeg gjorde med tilbakemeldingen
+
+Nå blir man videreført til forum etter å ha publisert noe
+
+
+<br>
+
+Jeg har spurt om elever og læreres meninger om diverse forbedringer på nettsiden opp gjennom ukene. Jeg mente det ikke var stort nok til å dokumenteres.
+

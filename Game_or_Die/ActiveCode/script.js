@@ -51,18 +51,22 @@ const validateContent = (content) => {
 }
 
 const savePost = (title, content, backupContent) => {
+    newPosts = JSON.parse(localStorage.getItem("stringifiedPosts")) || []; // Retrieve existing posts or initialize as empty array
+
     const newPost = {
         title,
         content: content || backupContent
     };
     //Declares the newPost object containing the value of title, content or the backupContent parameters
 
-    posts.push(newPost);
+    newPosts.push(newPost); // Push the new post object to the newPosts array
     //The newPost object is pushed to the posts[] array
 
     try {
-        localStorage.setItem("stringifiedPosts", JSON.stringify(posts));
-        console.log("Post successfully saved in local storage")
+        localStorage.setItem("stringifiedPosts", JSON.stringify(newPosts));
+        console.log("Post successfully saved in local storage");
+        console.log("Redirecting to forum")
+        window.location.href = "forum.html"
         //Tries to store a stringified version of the posts[] array under the name of stringifiedPosts
     } catch (error) {
         console.error("Error saving post to local storage:", error);
@@ -143,19 +147,23 @@ const getNewPosts = () => {
 function handlebarsLoad() {
     const postTemplate = Handlebars.compile(document.querySelector('#post-template').innerHTML);
     const postContainer = document.querySelector('#post-container');
+
+    postContainer.innerHTML = '';
+
     newPosts.forEach((post) => {
         const postHTML = postTemplate(post);
         postContainer.insertAdjacentHTML('beforeend', postHTML);
     });
 }
 
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
     if (window.location.pathname.includes("forum.html")) {
-        console.log("forum initialized")
-        getNewPosts()
-        handlebarsLoad()
+        console.log("forum initialized");
+        getNewPosts();
+        handlebarsLoad();
     }
-})
+});
+
 
 
 //[===============================[Portfolio]===================================
